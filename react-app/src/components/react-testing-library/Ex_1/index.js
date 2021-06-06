@@ -5,6 +5,7 @@ import React from 'react';
 function Ex_1() {
   return (
     <div className="App">
+      <h1>Example 1</h1>
       <header className="App-header">        
         <p>
           Edit <code>src/App.js</code> and save to reload.

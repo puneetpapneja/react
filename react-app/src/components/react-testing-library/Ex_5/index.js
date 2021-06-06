@@ -33,7 +33,8 @@ export default class Ex_5 extends React.Component {
     render(){
         const {posts } = this.state
         return (<div>
-                <h1>Ex_5:  Posts</h1>
+                <h1>Example 5</h1>
+                <h2>fetch posts</h2>
                 <b>Post lengh </b>{posts.length} <br />
                 {!posts.length && <h2>No posts found</h2>}
                {posts.length && this.renderPosts() }

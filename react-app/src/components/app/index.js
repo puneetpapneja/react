@@ -4,6 +4,11 @@ import React from 'react';
 import Menu from '../menu'
 import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom'
 import About from '../about'
+import Ex_1 from '../react-testing-library/Ex_1'
+import Ex_2 from '../react-testing-library/Ex_2'
+import Ex_3 from '../react-testing-library/Ex_3'
+import Ex_4 from '../react-testing-library/Ex_4'
+import Ex_5 from '../react-testing-library/Ex_5'
 
 function App() {
   return (
@@ -12,28 +17,27 @@ function App() {
     <Router>
         <Menu />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <About />
-          </Route>  
-          <Route path="/about">
-            <About />
+          </Route>          
+          <Route path="/react-testing-library/example-1">
+            <Ex_1 />
           </Route>         
+          <Route path="/react-testing-library/example-2">
+            <Ex_2 />
+          </Route>         
+          <Route path="/react-testing-library/example-3">
+            <Ex_3 />
+          </Route>         
+          <Route path="/react-testing-library/example-4">
+            <Ex_4 />
+          </Route>         
+          <Route path="/react-testing-library/example-5">
+            <Ex_5 />
+          </Route>         
+          <Redirect to="/" />
           </Switch>
           </Router>  
-      <header className="App-header">        
-      
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }

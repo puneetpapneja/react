@@ -10,7 +10,7 @@ describe('Ex_2 component testing',()=>{
         //nothing
     
         //assert
-        const outputElement = screen.getByText("hello from Ex_2",{exact: false})
+        const outputElement = screen.getByText("hello from",{exact: false})
         expect(outputElement).toBeInTheDocument();
     
     })

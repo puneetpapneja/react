@@ -16,7 +16,8 @@ export default class Ex_3 extends React.Component{
         const {isChangeText} = this.state
         return (
             <div>
-                <h1>Test Cases: Component with User intraction and state</h1>
+                <h1>Example 3</h1>
+                <h2> Component with User intraction and state</h2>
                 {!isChangeText ? <h2>Initial text</h2> : <h2>Text changed</h2>}
                 <button onClick={this.changeTextHandler}>Change Text</button>
             </div>
