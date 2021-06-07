@@ -24,6 +24,7 @@ describe('Ex_3 component test',()=>{
         const clickHandler = screen.getByRole('button') //act
         UserEvent.click(clickHandler)       //assert
         const outputElement = screen.queryByText('initial text',{exact: false})
+        //expect(outputElement).not.toBeInTheDocument();
         expect(outputElement).toBeNull();
     })
 })

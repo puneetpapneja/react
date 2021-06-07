@@ -7,7 +7,7 @@ export default class Ex_2 extends React.Component
         return (
             <div>
                 <h1>Example 2</h1>
-                <h1>hello from Example 2</h1>
+                <h2>Created Custom component with Jest test-case</h2>
             </div>
         )
     }

@@ -19,7 +19,7 @@ export default class Ex_4 extends  React.Component{
         return (
             <div>
                 <h1>Example 4</h1>
-                <h2>Use another component inside a component</h2>
+                <h2>Test case for use another component inside a component</h2>
                 {!isChangeText ? <h2><Output>Initial text</Output></h2> : <h2><Output>Text changed</Output></h2>}
                 <button onClick={this.changeTextHandler}>Change Text</button>
             </div>

@@ -34,8 +34,8 @@ export default class Ex_5 extends React.Component {
         const {posts } = this.state
         return (<div>
                 <h1>Example 5</h1>
-                <h2>fetch posts</h2>
-                <b>Post lengh </b>{posts.length} <br />
+                <h2>Test case for fetch posts from API and validate posts is redering without any error</h2>
+                <b>Total Posts  </b>{posts.length} <br />
                 {!posts.length && <h2>No posts found</h2>}
                {posts.length && this.renderPosts() }
             </div>)

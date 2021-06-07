@@ -6,6 +6,7 @@ function Ex_1() {
   return (
     <div className="App">
       <h1>Example 1</h1>
+      <h2>Default Jest test-case provided by Reactjs</h2>
       <header className="App-header">        
         <p>
           Edit <code>src/App.js</code> and save to reload.

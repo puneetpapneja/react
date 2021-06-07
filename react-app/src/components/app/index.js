@@ -9,14 +9,16 @@ import Ex_2 from '../react-testing-library/Ex_2'
 import Ex_3 from '../react-testing-library/Ex_3'
 import Ex_4 from '../react-testing-library/Ex_4'
 import Ex_5 from '../react-testing-library/Ex_5'
+import Resources from '../react-testing-library/resources';
 
 function App() {
   return (
     
     <div className="App">
-      <h1>Learn React</h1>
+      
     <Router>
         <Menu />
+        <h1>Learn React</h1> 
         <Switch>
           <Route exact path="/">
             <About />
@@ -36,9 +38,13 @@ function App() {
           <Route path="/react-testing-library/example-5">
             <Ex_5 />
           </Route>         
+          <Route path="/react-testing-library/resources">
+            <Resources />
+          </Route> 
           <Redirect to="/" />
           </Switch>
-          </Router>  
+          </Router> 
+          
     </div>
   );
 }
