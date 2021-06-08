@@ -1,0 +1,11 @@
+img {
+    width: 100%;
+}
+
+.row {
+    margin-right:unset !important;
+}
+
+.color-red{
+    color:red;
+}
