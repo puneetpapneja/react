@@ -4,10 +4,10 @@ import React from 'react';
 
 function Ex_1() {
   return (
-    <div className="App">
+    <div className="App">      
+      <header className="App-header">        
       <h1>Example 1</h1>
       <h2>Default Jest test-case provided by Reactjs</h2>
-      <header className="App-header">        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,6 +20,15 @@ function Ex_1() {
           Learn React
         </a>
       </header>
+
+       <div className="row">
+         <div className="col-md-6">
+            <h2>Component</h2>
+         </div>
+         <div className="col-md-6">
+            <h2>Test Case</h2>
+         </div>
+       </div>
     </div>
   );
 }

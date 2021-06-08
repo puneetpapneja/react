@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ex_6 component testing render Example 6 1`] = `
+<div>
+  <h1>
+    Example 6
+  </h1>
+  <h2>
+    Snapshot testing
+  </h2>
+  <b>
+    Need to install react-test-renderer package
+  </b>
+</div>
+`;

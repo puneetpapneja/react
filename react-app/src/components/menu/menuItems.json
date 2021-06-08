@@ -24,6 +24,10 @@
         "redirectPath":"/react-testing-library/example-5"
       },
       {
+        "name":"Example-6",
+        "redirectPath":"/react-testing-library/example-6"
+      },
+      {
         "name":"Resources",
         "redirectPath":"/react-testing-library/resources"
       }
