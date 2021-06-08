@@ -22,6 +22,12 @@ module.exports = {
               loader: 'babel-loader',
             },
           },
+          {
+            test: /\.(jpg|jpeg|png|gif)$/,
+            use: {
+              loader:'url-loader'
+            }
+          },
       ]
   },
   plugins:[
