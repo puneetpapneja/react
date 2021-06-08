@@ -1,4 +1,8 @@
 import React from 'react'
+import imgComponent from '../../../assets/images/react-testing-library/screen-5.png';
+import imgTestCase from '../../../assets/images/react-testing-library/test-screen-5.png';
+import imgTestCase2 from '../../../assets/images/react-testing-library/test-2-screen-5.png';
+import './style.css';
 
 export default class Ex_5 extends React.Component {
 
@@ -38,6 +42,23 @@ export default class Ex_5 extends React.Component {
                 <b>Total Posts  </b>{posts.length} <br />
                 {!posts.length && <h2>No posts found</h2>}
                {posts.length && this.renderPosts() }
+               <hr />
+                <div className="row">
+                    <div className="col-md-6">
+                        <h2>Component</h2>
+                        <img src={imgComponent} />
+                    </div>
+                    <div className="col-md-6">
+                        <div className="col-md-12">
+                            <h2>Test Case</h2>
+                            <img src={imgTestCase} />
+                        </div>
+                        <div className="col-md-12">
+                            <h2>Test Case with mock data</h2>
+                            <img src={imgTestCase2} />
+                        </div>
+                    </div>
+                </div>
             </div>)
     }
 }

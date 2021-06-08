@@ -10,7 +10,6 @@ describe('Ex_6 component testing',()=>{
         //nothing
     
         //assert        
-        expect(tree).toMatchSnapshot();
-    
+        expect(tree).toMatchSnapshot();    
     })
 })

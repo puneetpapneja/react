@@ -1,4 +1,5 @@
-//import logo from './logo.svg';
+import imgComponent from '../../../assets/images/react-testing-library/screen-1.png';
+import imgTestCase from '../../../assets/images/react-testing-library/test-screen-1.png';
 import './style.css';
 import React from 'react';
 
@@ -20,13 +21,15 @@ function Ex_1() {
           Learn React
         </a>
       </header>
-
+    <hr />
        <div className="row">
          <div className="col-md-6">
             <h2>Component</h2>
+            <img src={imgComponent} />
          </div>
          <div className="col-md-6">
             <h2>Test Case</h2>
+            <img src={imgTestCase} />
          </div>
        </div>
     </div>
