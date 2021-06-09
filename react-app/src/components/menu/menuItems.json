@@ -28,6 +28,10 @@
         "redirectPath":"/react-testing-library/example-6"
       },
       {
+        "name":"Example-7",
+        "redirectPath":"/react-testing-library/example-7"
+      },
+      {
         "name":"Resources",
         "redirectPath":"/react-testing-library/resources"
       }
