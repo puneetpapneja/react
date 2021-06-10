@@ -15,9 +15,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "webpack serve --config=./src/etc/webpack.config.dev.js --open",
-    "build-dev": "webpack --config=./src/etc/webpack.config.dev.js",
-    "build": "webpack --config=./src/etc/webpack.config.prod.js",
+    "start": "webpack serve --config=./etc/webpack.config.dev.js --open",
+    "build-dev": "webpack --config=./etc/webpack.config.dev.js",
+    "build": "webpack --config=./etc/webpack.config.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
