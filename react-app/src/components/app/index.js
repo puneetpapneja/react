@@ -12,6 +12,7 @@ import Ex_5 from '../react-testing-library/Ex_5'
 import Ex_6 from '../react-testing-library/Ex_6'
 import Ex_7 from '../react-testing-library/Ex_7'
 import Resources from '../react-testing-library/resources';
+import Enzyme_Ex_1 from '../enzyme/Ex_1'
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path="/react-testing-library/resources">
             <Resources />
+          </Route> 
+          <Route path="/enzyme/example">
+            <Enzyme_Ex_1 />
           </Route> 
           <Redirect to="/" />
           </Switch>

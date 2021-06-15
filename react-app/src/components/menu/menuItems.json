@@ -36,5 +36,19 @@
         "redirectPath":"/react-testing-library/resources"
       }
     ]
+  },
+  {
+    "name":"Enzyme",
+    "redirectPath":"enzyme",
+    "childrens":[
+      {
+        "name":"Example",
+        "redirectPath":"/enzyme/example"
+      },
+      {
+        "name":"Resources",
+        "redirectPath":"/enzyme/resources"
+      }
+    ]
   }
 ]

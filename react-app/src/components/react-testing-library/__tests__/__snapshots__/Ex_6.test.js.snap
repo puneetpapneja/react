@@ -8,8 +8,49 @@ exports[`Ex_6 component testing render Example 6 1`] = `
   <h2>
     Snapshot testing
   </h2>
-  <b>
+  <b
+    className="color-red"
+  >
     Need to install react-test-renderer package
   </b>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6"
+    >
+      <h2>
+        Component
+      </h2>
+      <img
+        src="screen-6.PNG"
+      />
+    </div>
+    <div
+      className="col-md-6"
+    >
+      <div
+        className="col-md-12"
+      >
+        <h2>
+          Test Case
+        </h2>
+        <img
+          src="test-screen-6.PNG"
+        />
+      </div>
+      <div
+        className="col-md-12"
+      >
+        <h2>
+          Snapshot file
+        </h2>
+        <img
+          src="test-2-screen-6.PNG"
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;

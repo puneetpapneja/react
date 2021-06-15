@@ -1,18 +1,23 @@
-import {render,screen} from '@testing-library/react'
-import UserEvent from '@testing-library/user-event'
+import {shallow, mount} from 'enzyme'
+import Ex_1 from '../Ex_1'
 
-import Ex_4 from '../Ex_4'
-
-describe('Ex_4 component test',()=>{
-    test("render initial text",()=>{        
-        render(<Ex_4 />); //arrange
-        console.log(screen.debug())
-        //act nothing             
+describe('Enzyme: Ex_1 component test',()=>{
+    test("render component without error",()=>{        
+        
+        const wrapper = shallow(<Ex_1 />)
+        
+        
+        
+        /*using react testing library
+        render(<Ex_1 />); //arrange
+        //act nothing  
+        console.log(screen.debug());      
         const outputElement = screen.getByText('initial text',{exact: false}) //assert
-        expect(outputElement).toBeInTheDocument();
+        expect(outputElement).toBeInTheDocument(); */
+        
     })
 
-    test("render changed text",()=>{        
+    /*test("render changed text",()=>{        
         render(<Ex_4 />);        //arrange
         const clickHandler = screen.getByRole('button') //act
         UserEvent.click(clickHandler)        
@@ -26,5 +31,5 @@ describe('Ex_4 component test',()=>{
         UserEvent.click(clickHandler)        
         const outputElement = screen.queryByText('initial text',{exact: false}) //assert
         expect(outputElement).toBeNull();
-    })
+    })*/
 })
