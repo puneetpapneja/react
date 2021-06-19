@@ -11,6 +11,7 @@ import Ex_4 from '../react-testing-library/Ex_4'
 import Ex_5 from '../react-testing-library/Ex_5'
 import Ex_6 from '../react-testing-library/Ex_6'
 import Ex_7 from '../react-testing-library/Ex_7'
+import ViewEditUseHOC from '../viewEditUseHOC';
 import Resources from '../react-testing-library/resources';
 import Enzyme_Ex_1 from '../enzyme/Ex_1'
 
@@ -52,7 +53,10 @@ function App() {
           </Route> 
           <Route path="/enzyme/example">
             <Enzyme_Ex_1 />
-          </Route> 
+          </Route>
+          <Route path="/hoc/view-edit">
+            <ViewEditUseHOC title="Puneet" />
+          </Route>
           <Redirect to="/" />
           </Switch>
           </Router> 
