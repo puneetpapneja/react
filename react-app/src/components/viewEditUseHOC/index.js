@@ -5,28 +5,24 @@ class ViewEditUseHOC extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            title : this.props.title,
-            input: ''
+            title : this.props.title,            
         }        
-
+        this.input = React.createRef()        
         this.onUpdateHandler = this.onUpdateHandler.bind(this)
-    }
-
-    onChangeHandler(e){
-        this.setState({input: e.target.value, })        
-    }
+    }   
 
     onUpdateHandler(){
+        this.props.toggleHandler() 
+        this.setState({title: this.input.current.value})        
         
-        this.setState({title: this.state.input,input:''}, ()=> this.props.toggleHandler() )        
     }
 
     render(){
         const {toggleStatus, toggleHandler} = this.props
-        const {title,input } = this.state
+        const {title} = this.state
         return (
             <div>
-                { toggleStatus ? <input type="text" value={input && title}  onChange={this.onChangeHandler} /> : <p>{input || title} </p>} 
+                { toggleStatus ? <input type="text" defaultValue={title} ref={this.input} /> : <p>{title} </p>} 
                 <button onClick={toggleHandler}>{toggleStatus ? 'Cancel' : 'Edit'}</button>
                 {toggleStatus && <button onClick={this.onUpdateHandler}>Update</button>}
             </div>
