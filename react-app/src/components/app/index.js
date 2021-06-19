@@ -14,6 +14,7 @@ import Ex_7 from '../react-testing-library/Ex_7'
 import ViewEditUseHOC from '../viewEditUseHOC';
 import Resources from '../react-testing-library/resources';
 import Enzyme_Ex_1 from '../enzyme/Ex_1'
+import ErrorBoundary from '../error-boundary'
 
 function App() {
   return (
@@ -55,7 +56,9 @@ function App() {
             <Enzyme_Ex_1 />
           </Route>
           <Route path="/hoc/view-edit">
-            <ViewEditUseHOC title="Puneet" />
+            <ErrorBoundary>
+              <ViewEditUseHOC title="Puneet" />
+            </ErrorBoundary>
           </Route>
           <Redirect to="/" />
           </Switch>
