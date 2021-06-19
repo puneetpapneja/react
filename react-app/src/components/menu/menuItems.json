@@ -50,5 +50,15 @@
         "redirectPath":"/enzyme/resources"
       }
     ]
+  },
+  {
+    "name":"HOC",
+    "redirectPath":"hoc",
+    "childrens":[
+      {
+        "name":"ViewEdit using toggle",
+        "redirectPath":"/hoc/view-edit"
+      }
+    ]
   }
 ]
